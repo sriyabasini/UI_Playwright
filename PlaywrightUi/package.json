@@ -1,0 +1,24 @@
+{
+  "name": "flipkart-playwright",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Playwright TypeScript test framework for ecommerce flows",
+  "scripts": {
+    "setup:test-data": "ts-node scripts/create-test-data.ts",
+    "test": "playwright test",
+    "test:orders": "playwright test --grep \"authenticated order placement\"",
+    "test:list": "playwright test --list",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "dotenv": "^18.0.7",
+    "exceljs": "^4.4.0",
+    "playwright": "^1.64.0"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.64.0",
+    "@types/node": "^24.10.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
+  }
+}
